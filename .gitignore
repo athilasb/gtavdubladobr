@@ -1,0 +1,10 @@
+# nada do jogo nem dados gerados vai para o repositório
+backup_original/
+projeto/
+dados/
+teste/
+__pycache__/
+*.pyc
+*.wav
+*.rpf
+*.awc

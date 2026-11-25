@@ -1,0 +1,44 @@
+DUBLADOR GTA V
+==============
+
+Abrir: dois cliques em "Abrir Dublador GTA V.bat".
+(A primeira abertura lê a lista de todos os áudios do jogo, ~1,5 minuto. Depois é instantâneo.)
+
+O QUE TEM NA LISTA (cerca de 256 mil áudios)
+  🗣 SS_AC ... SS_UZ      - diálogos das missões (o nome do arquivo lembra a missão:
+                             pro = Prólogo, arm1 = primeira missão do Franklin, fam = família...)
+  🎬 CUTSCENE_MASTERED_ONLY - cutscenes (fala + música juntas: só ouvir/exportar por enquanto)
+  🗣 S_FULL_* / S_MINI_*   - falas de pedestres, gangues, polícia (cada arquivo = uma "voz")
+  🗣 S_MISC, PAIN, PROLOGUE - falas avulsas, gemidos, prólogo
+  🔊 o resto               - efeitos, rádio, música
+  DLCs (update\x64\dlcpacks) - aparecem no fim da lista
+
+  O jogo não guarda nome para cada fala, só um código (ex.: 001A1D2F). Use o campo
+  "Texto / tradução" para anotar o que cada uma diz; a busca procura nesse texto também.
+
+COMO DUBLAR UMA FALA
+  1. Abra um arquivo, clique numa fala e aperte ESPAÇO para ouvir.
+  2. R grava com o microfone (R de novo para parar) ou "Importar arquivo..." (WAV/MP3/OGG).
+  3. "Ouvir minha versão" para conferir. N vai para a próxima.
+  4. Feche o GTA e clique "APLICAR NO JOGO".
+
+EM LOTE: selecione um arquivo (segundo nível da lista) -> "Exportar arquivo AWC selecionado",
+  edite os WAVs sem mudar o nome e "Importar pasta com WAVs editados".
+
+COMO É APLICADO (campo "Modo" no topo)
+  - direto (padrão, não precisa instalar nada): o programa copia o .rpf original para
+    "backup_original" e regrava o .rpf do jogo só com as falas trocadas (mesma criptografia
+    do jogo). "Restaurar áudio original" devolve os arquivos idênticos.
+  - mods: grava em "Grand Theft Auto V\mods\..." sem tocar nos originais. Precisa do
+    OpenIV com o "ASI Manager" (OpenIV.asi + carregador ASI) instalado no jogo.
+  - auto: usa "mods" se achar o OpenIV.asi, senão "direto".
+
+AVISOS
+  - Use só no modo história. Se a Steam "verificar integridade", ela desfaz a dublagem:
+    é só clicar APLICAR de novo.
+  - Suas gravações ficam em projeto\substituicoes e as anotações em projeto\textos.json.
+
+TESTE QUE JÁ ESTÁ APLICADO
+  Todas as 332 falas do Prólogo (SS_NP.rpf / pro.awc) foram trocadas por uma voz dizendo
+  "Teste de dublagem. Funcionou!". Comece um jogo novo para ouvir. Para desfazer:
+  selecione as falas e "Voltar ao original" + APLICAR, ou "Restaurar áudio original".
